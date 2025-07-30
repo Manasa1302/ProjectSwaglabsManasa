@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser setup is done]]>
+    </line>
+    <line>
+      <![CDATA[Login successfully]]>
+    </line>
+    <line>
+      <![CDATA[Manasa]]>
+    </line>
+    <line>
+      <![CDATA[Nerusu]]>
+    </line>
+    <line>
+      <![CDATA[ 520082]]>
+    </line>
+    <line>
+      <![CDATA[Logout is done]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-07-28T13:14:49 IST" name="RegressionSuite" finished-at="2025-07-28T13:15:00 IST" duration-ms="10808">
+    <groups>
+      <group name="RT">
+        <method signature="Example1Test.orderProducts(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:producttest.Example1Test@4c309d4d]" name="orderProducts" class="producttest.Example1Test"/>
+      </group> <!-- RT -->
+    </groups>
+    <test started-at="2025-07-28T13:14:49 IST" name="Test" finished-at="2025-07-28T13:15:00 IST" duration-ms="10808">
+      <class name="producttest.Example1Test">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:producttest.Example1Test@4c309d4d]" started-at="2025-07-28T13:14:49 IST" name="browserSetup" finished-at="2025-07-28T13:14:56 IST" duration-ms="6419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser setup is done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method is-config="true" signature="LogIn()[pri:0, instance:producttest.Example1Test@4c309d4d]" started-at="2025-07-28T13:14:57 IST" name="LogIn" finished-at="2025-07-28T13:14:57 IST" duration-ms="545" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LogIn -->
+        <test-method signature="orderProducts(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:producttest.Example1Test@4c309d4d]" started-at="2025-07-28T13:14:57 IST" name="orderProducts" data-provider="CheckoutInfo" finished-at="2025-07-28T13:15:00 IST" duration-ms="2339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manasa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nerusu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ 520082]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Manasa]]>
+            </line>
+            <line>
+              <![CDATA[Nerusu]]>
+            </line>
+            <line>
+              <![CDATA[ 520082]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- orderProducts -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:producttest.Example1Test@4c309d4d]" started-at="2025-07-28T13:15:00 IST" name="Logout" finished-at="2025-07-28T13:15:00 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout is done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="broserTerminate()[pri:0, instance:producttest.Example1Test@4c309d4d]" started-at="2025-07-28T13:15:00 IST" name="broserTerminate" finished-at="2025-07-28T13:15:00 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broserTerminate -->
+      </class> <!-- producttest.Example1Test -->
+    </test> <!-- Test -->
+  </suite> <!-- RegressionSuite -->
+</testng-results>
