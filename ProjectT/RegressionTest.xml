@@ -3,7 +3,7 @@
 <suite name="RegressionSuite">
   <test thread-count="5" name="Test">
   
-  <parameter name="Browser" value="chrome"></parameter>
+  <parameter name="Browser" value="edge"></parameter>
     <classes>
       <class name="producttest.Example1Test"/>
     </classes>

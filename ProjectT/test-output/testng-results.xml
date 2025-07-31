@@ -1,107 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
-    <line>
-      <![CDATA[Browser setup is done]]>
-    </line>
-    <line>
-      <![CDATA[Login successfully]]>
-    </line>
-    <line>
-      <![CDATA[Logout is done]]>
-    </line>
-    <line>
-      <![CDATA[Login successfully]]>
-    </line>
-    <line>
-      <![CDATA[Logout is done]]>
-    </line>
-    <line>
-      <![CDATA[Login successfully]]>
-    </line>
-    <line>
-      <![CDATA[Manasa]]>
-    </line>
-    <line>
-      <![CDATA[Nerusu]]>
-    </line>
-    <line>
-      <![CDATA[ 520082]]>
-    </line>
-    <line>
-      <![CDATA[Logout is done]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-07-31T13:02:29 IST" name="RegressionSuite" finished-at="2025-07-31T13:02:42 IST" duration-ms="12191">
+  <suite started-at="2025-07-31T13:24:40 IST" name="RegressionSuite" finished-at="2025-07-31T13:24:45 IST" duration-ms="5640">
     <groups>
       <group name="RT">
         <method signature="Example1Test.orderProducts(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:producttest.Example1Test@ed7f8b4]" name="orderProducts" class="producttest.Example1Test"/>
       </group> <!-- RT -->
     </groups>
-    <test started-at="2025-07-31T13:02:29 IST" name="Test" finished-at="2025-07-31T13:02:42 IST" duration-ms="12191">
+    <test started-at="2025-07-31T13:24:40 IST" name="Test" finished-at="2025-07-31T13:24:45 IST" duration-ms="5640">
       <class name="producttest.Example1Test">
-        <test-method is-config="true" signature="ReportStepup()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:29 IST" name="ReportStepup" finished-at="2025-07-31T13:02:30 IST" duration-ms="464" status="PASS">
+        <test-method is-config="true" signature="ReportStepup()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:40 IST" name="ReportStepup" finished-at="2025-07-31T13:24:40 IST" duration-ms="392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReportStepup -->
-        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:30 IST" name="browserSetup" finished-at="2025-07-31T13:02:32 IST" duration-ms="2475" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:40 IST" name="browserSetup" finished-at="2025-07-31T13:24:44 IST" duration-ms="3627" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 136
+Current browser version is 138.0.3351.109 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Host info: host: 'LAPTOP-QABKR2GO', ip: '192.168.137.163'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], binary: C:\Program Files (x86)\Micr..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 136
+Current browser version is 138.0.3351.109 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Host info: host: 'LAPTOP-QABKR2GO', ip: '192.168.137.163'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], binary: C:\Program Files (x86)\Micr..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
+at genericlibrary.WebDriverLibrary.openBrowser(WebDriverLibrary.java:51)
+at genericlibrary.BaseConfig.browserSetup(BaseConfig.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
-            <line>
-              <![CDATA[Browser setup is done]]>
-            </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method is-config="true" signature="LogIn()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:32 IST" name="LogIn" finished-at="2025-07-31T13:02:33 IST" duration-ms="956" status="PASS">
+        <test-method is-config="true" signature="LogIn()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:44 IST" name="LogIn" finished-at="2025-07-31T13:24:44 IST" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Login successfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- LogIn -->
-        <test-method signature="Addproduct2()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:33 IST" name="Addproduct2" finished-at="2025-07-31T13:02:33 IST" duration-ms="36" status="PASS">
+        <test-method signature="Addproduct2()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:44 IST" name="Addproduct2" finished-at="2025-07-31T13:24:44 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 136
+Current browser version is 138.0.3351.109 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Host info: host: 'LAPTOP-QABKR2GO', ip: '192.168.137.163'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], binary: C:\Program Files (x86)\Micr..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 136
+Current browser version is 138.0.3351.109 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Host info: host: 'LAPTOP-QABKR2GO', ip: '192.168.137.163'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], binary: C:\Program Files (x86)\Micr..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
+at genericlibrary.WebDriverLibrary.openBrowser(WebDriverLibrary.java:51)
+at genericlibrary.BaseConfig.browserSetup(BaseConfig.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Addproduct2 -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:33 IST" name="Logout" finished-at="2025-07-31T13:02:34 IST" duration-ms="434" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:44 IST" name="Logout" finished-at="2025-07-31T13:24:44 IST" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Logout is done]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="LogIn()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:34 IST" name="LogIn" finished-at="2025-07-31T13:02:35 IST" duration-ms="745" status="PASS">
+        <test-method is-config="true" signature="LogIn()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:44 IST" name="LogIn" finished-at="2025-07-31T13:24:44 IST" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Login successfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- LogIn -->
-        <test-method signature="Addproduct3()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:35 IST" name="Addproduct3" finished-at="2025-07-31T13:02:35 IST" duration-ms="3" status="PASS">
+        <test-method signature="Addproduct3()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:44 IST" name="Addproduct3" finished-at="2025-07-31T13:24:44 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 136
+Current browser version is 138.0.3351.109 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Host info: host: 'LAPTOP-QABKR2GO', ip: '192.168.137.163'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], binary: C:\Program Files (x86)\Micr..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 136
+Current browser version is 138.0.3351.109 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Host info: host: 'LAPTOP-QABKR2GO', ip: '192.168.137.163'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], binary: C:\Program Files (x86)\Micr..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
+at genericlibrary.WebDriverLibrary.openBrowser(WebDriverLibrary.java:51)
+at genericlibrary.BaseConfig.browserSetup(BaseConfig.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Addproduct3 -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:35 IST" name="Logout" finished-at="2025-07-31T13:02:35 IST" duration-ms="380" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:44 IST" name="Logout" finished-at="2025-07-31T13:24:44 IST" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Logout is done]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="LogIn()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:36 IST" name="LogIn" finished-at="2025-07-31T13:02:37 IST" duration-ms="713" status="PASS">
+        <test-method is-config="true" signature="LogIn()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:45 IST" name="LogIn" finished-at="2025-07-31T13:24:45 IST" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Login successfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- LogIn -->
-        <test-method signature="orderProducts(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:37 IST" name="orderProducts" data-provider="CheckoutInfo" finished-at="2025-07-31T13:02:40 IST" duration-ms="3512" status="PASS">
+        <test-method signature="orderProducts(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:45 IST" name="orderProducts" data-provider="CheckoutInfo" finished-at="2025-07-31T13:24:45 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -119,26 +254,75 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 136
+Current browser version is 138.0.3351.109 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Host info: host: 'LAPTOP-QABKR2GO', ip: '192.168.137.163'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], binary: C:\Program Files (x86)\Micr..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 136
+Current browser version is 138.0.3351.109 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Host info: host: 'LAPTOP-QABKR2GO', ip: '192.168.137.163'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], binary: C:\Program Files (x86)\Micr..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
+at genericlibrary.WebDriverLibrary.openBrowser(WebDriverLibrary.java:51)
+at genericlibrary.BaseConfig.browserSetup(BaseConfig.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
-            <line>
-              <![CDATA[Manasa]]>
-            </line>
-            <line>
-              <![CDATA[Nerusu]]>
-            </line>
-            <line>
-              <![CDATA[ 520082]]>
-            </line>
           </reporter-output>
         </test-method> <!-- orderProducts -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:40 IST" name="Logout" finished-at="2025-07-31T13:02:41 IST" duration-ms="457" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:45 IST" name="Logout" finished-at="2025-07-31T13:24:45 IST" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Logout is done]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="ReportTerminate()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:02:41 IST" name="ReportTerminate" finished-at="2025-07-31T13:02:42 IST" duration-ms="869" status="PASS">
+        <test-method is-config="true" signature="ReportTerminate()[pri:0, instance:producttest.Example1Test@ed7f8b4]" started-at="2025-07-31T13:24:45 IST" name="ReportTerminate" finished-at="2025-07-31T13:24:45 IST" duration-ms="480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReportTerminate -->
