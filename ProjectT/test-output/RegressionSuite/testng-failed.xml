@@ -2,14 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="BrowserName" value="chrome"/>
+    <parameter name="Browser" value="chrome"/>
     <classes>
       <class name="producttest.Example1Test">
         <methods>
+          <include name="orderProducts" invocation-numbers="0"/>
           <include name="broserTerminate"/>
           <include name="browserSetup"/>
           <include name="LogIn"/>
-          <include name="ProductsCart"/>
+          <include name="ReportTerminate"/>
+          <include name="ReportStepup"/>
           <include name="Logout"/>
         </methods>
       </class> <!-- producttest.Example1Test -->

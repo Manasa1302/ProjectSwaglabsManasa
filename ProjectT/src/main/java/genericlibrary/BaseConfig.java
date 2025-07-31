@@ -6,10 +6,17 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import pagerepository.CheckoutCompletePage;
 import pagerepository.LoginPage;
@@ -24,7 +31,47 @@ public class BaseConfig {
 	public String FirstName;
 	public String LastName;
 	public String ZipCode;
-
+	
+	public ExtentReports report;
+	public ExtentSparkReporter spark;
+    public ExtentTest test;
+	
+	@BeforeTest
+	public void ReportStepup()
+	{
+		//create the Sparkreport
+		
+			    spark = new ExtentSparkReporter("./AdvancedReports/report.html");
+				
+				//configure the spark report information
+				
+				spark.config().setDocumentTitle("Regression Testing for the Swag Labs");
+				spark.config().setReportName("RegressionSuite");
+				spark.config().setTheme(Theme.STANDARD);
+				
+				//CREATE THE EXTENT REPORT
+				
+				ExtentReports report = new ExtentReports();
+				
+				//Attach the spark Report and Extent report
+				
+				report.attachReporter(spark);
+				
+				//configure the system information in extent report
+				
+				report.setSystemInfo("Device Name:","Manasa");
+				report.setSystemInfo("Operating System:","WINDOWS 11");
+				report.setSystemInfo("Browser:","Chrome");
+				report.setSystemInfo("BrowserVersion:","Chrome");
+	}
+	
+	@AfterTest
+	public void ReportTerminate()
+	{
+		report.flush();
+	}
+	
+	
 	@Parameters("Browser")
 
 	@BeforeClass

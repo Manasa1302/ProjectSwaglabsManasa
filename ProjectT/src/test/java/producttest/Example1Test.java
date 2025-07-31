@@ -7,6 +7,9 @@ import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+
+import com.aventstack.extentreports.Status;
+
 import genericlibrary.BaseConfig;
 import pagerepository.CartPage;
 import pagerepository.CheckoutOverviewPage;
@@ -17,6 +20,21 @@ public class Example1Test extends BaseConfig {
 
 	@Test(groups="RT", priority = 1, enabled = true, invocationCount = 1, dataProvider = "CheckoutInfo")
 	public void orderProducts(String FirstName, String LastName, String ZipCode) {
+		
+		//Create the Test Information
+		
+				 test = report.createTest("Regressiontest");
+				
+				//Steps Information
+				
+				test.log(Status.INFO, "Step1: Launching The Browser Successfully");
+				
+				test.log(Status.INFO, "Step2: Navigating to the application via URL Successful");
+				
+				test.log(Status.PASS, "Step3: VERIFIED the Webpage Successful");
+				
+				
+				
 		
 		Reporter.log(FirstName);
 		Reporter.log(LastName);
@@ -35,8 +53,19 @@ public class Example1Test extends BaseConfig {
 
 		// Click on the fourth product
 		hpobj.getfourthproduct().click();
+		
+		
 		// Verify Add To Cart button is Displayed & is Enabled
 		Assert.assertTrue(hpobj.getaddtocartbtn().isDisplayed() && hpobj.getaddtocartbtn().isEnabled());
+		
+		if(hpobj.getfourthproduct().isDisplayed())
+		{
+			test.log(Status.PASS, "Step4: Verified the WebElements Displayed");
+		}
+		else
+		{
+			test.log(Status.PASS, "Step4: Verified the WebElements  not Displayed");
+		}
 		// Click on Add To Cart button
 		hpobj.getaddtocartbtn().click();
 		// Verify Back To Products link is Displayed & is Enabled
