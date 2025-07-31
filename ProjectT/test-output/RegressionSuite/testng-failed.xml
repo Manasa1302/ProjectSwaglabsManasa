@@ -7,7 +7,6 @@
       <class name="producttest.Example1Test">
         <methods>
           <include name="orderProducts" invocation-numbers="0"/>
-          <include name="broserTerminate"/>
           <include name="browserSetup"/>
           <include name="LogIn"/>
           <include name="ReportTerminate"/>

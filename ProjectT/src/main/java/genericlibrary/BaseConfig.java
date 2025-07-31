@@ -51,7 +51,7 @@ public class BaseConfig {
 				
 				//CREATE THE EXTENT REPORT
 				
-				ExtentReports report = new ExtentReports();
+				report = new ExtentReports();
 				
 				//Attach the spark Report and Extent report
 				
@@ -65,11 +65,7 @@ public class BaseConfig {
 				report.setSystemInfo("BrowserVersion:","Chrome");
 	}
 	
-	@AfterTest
-	public void ReportTerminate()
-	{
-		report.flush();
-	}
+	
 	
 	
 	@Parameters("Browser")
@@ -200,13 +196,12 @@ public class BaseConfig {
 
 	}
 
-	@AfterClass
-	public void broserTerminate() {
-
-		// Close the Browser
-		WebDriverLibrary.closeAllWindows();
-
+	@AfterTest
+	public void ReportTerminate()
+	{
+		report.flush();
 	}
+
 
 	@DataProvider
 	public Object[][] CheckoutInfo() {

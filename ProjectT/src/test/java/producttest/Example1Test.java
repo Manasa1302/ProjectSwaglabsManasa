@@ -148,5 +148,25 @@ public class Example1Test extends BaseConfig {
 //		 Assert.fail();
 
 	}
+	@Test
+	public void Addproduct2() {
+		// create the test information
+
+		test = report.createTest("RegressionTest");
+
+		// steps information
+		test.log(Status.INFO, "Step1:Launching The Browser Succesfully");
+
+	}
+	@Test
+	public void Addproduct3() {
+		// create the test information
+
+		test = report.createTest("RegressionTest");
+
+		// steps information
+		test.log(Status.INFO, "Step1:Launching The Browser Succesfully");
+
+	}
 
 }
